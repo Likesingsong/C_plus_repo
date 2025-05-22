@@ -55,7 +55,7 @@ int main() {
     cout<<"s3="<<s3<<endl;
     s3 += s2;
     cout<<"s3="<<s3<<endl;
-    cout<<"输入s4:";
+    cout<<"input s4:";
     cin>>s4;
     cout<<"s4="<<s4<<endl;
     s5 = s3 + s4;
