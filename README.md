@@ -1,2 +1,2 @@
-# MyString
-I want you to see it.
+# c++ study notes
+Believe in the power of belief.
