@@ -2,28 +2,28 @@
 using namespace std;
 
 int main() {
-    int a = 10;           // 定义一个整型变量a
-    int* p = &a;          // 定义一个指向int的指针p，并让它指向a的地址
+    int a = 10;           // Define an integer variable a
+    int* p = &a;          // Define a pointer to int p, and let it point to the address of a
 
-    cout << "a的值: " << a << endl;
-    cout << "a的地址: " << &a << endl;
-    cout << "p的值(即a的地址): " << p << endl;
-    cout << "p的地址值: " << &p << endl;
-    cout << "*p的值(即a的值): " << *p << endl;
+    cout << "Value of a: " << a << endl;
+    cout << "Address of a: " << &a << endl;
+    cout << "Value of p (i.e., address of a): " << p << endl;
+    cout << "Address of p: " << &p << endl;
+    cout << "Value of *p (i.e., value of a): " << *p << endl;
 
-    *p = 20;              // 通过指针修改a的值
-    cout << "通过指针修改后a的值: " << a << endl;
+    *p = 20;              // Modify the value of a through the pointer
+    cout << "Value of a after modification via pointer: " << a << endl;
 
     int b = 30;
-    p = &b;               // 让指针p指向b
-    cout << "b的地址: " << &b << endl;
-    cout << "p现在指向b, *p的值: " << *p << endl;
-    cout << "p的地址值: " << &p << endl;
-    // 二级指针
+    p = &b;               // Let pointer p point to b
+    cout << "Address of b: " << &b << endl;
+    cout << "p now points to b, value of *p: " << *p << endl;
+    cout << "Address of p: " << &p << endl;
+    // Double pointer
     int** pp = &p;
-    cout << "pp的值(即p的地址): " << pp << endl;
-    cout << "*pp的值(即p的值): " << *pp << endl;
-    cout << "**pp的值(即a的值): " << **pp << endl;
+    cout << "Value of pp (i.e., address of p): " << pp << endl;
+    cout << "Value of *pp (i.e., value of p): " << *pp << endl;
+    cout << "Value of **pp (i.e., value of b): " << **pp << endl;
 
     return 0;
 }
